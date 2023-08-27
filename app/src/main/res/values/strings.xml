@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Embeded map</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZWxlY3Ryb2dyaWZmaW4tNzciLCJhIjoiY2xsMjBpeGpzMDNweTNjcXNqYjAzcmtnOCJ9.kKm20H5JYJQqHoPi3yJx4Q</string>
+</resources>

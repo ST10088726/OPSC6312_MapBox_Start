@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                // Do not change the username below.
+                // This should always be `mapbox` (not your username).
+                username = "mapbox"
+                // Use the secret token you stored in gradle.properties as the password
+                password = "sk.eyJ1IjoiZWxlY3Ryb2dyaWZmaW4tNzciLCJhIjoiY2xsam10dWtmMTB0aTNqbGliMHF6aW1jcCJ9.dcNs6UCVVZe7g8RSoF2jcw"
+            }
+        }
+    }
+}
+rootProject.name = "Embeded map"
+include ':app'
+
